@@ -10,8 +10,15 @@ func main() {
 	tree := generateTree()
 	binary_tree.PreorderTraversal(tree)
 	fmt.Println()
-	res := binary_tree.InorderTraversal(tree)
-	for _, re := range res {
+	for _, re := range binary_tree.PreorderTraversal2(tree) {
+		fmt.Print(re)
+	}
+	fmt.Println()
+	for _, re := range binary_tree.InorderTraversal(tree) {
+		fmt.Print(re)
+	}
+	fmt.Println()
+	for _, re := range binary_tree.PostOrderTraversal(tree) {
 		fmt.Print(re)
 	}
 }
