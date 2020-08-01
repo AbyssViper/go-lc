@@ -1,2 +1,2 @@
-# go-lc
-Record lc by use golang.
+# Project for lc.
+Use golang.
