@@ -2,14 +2,15 @@ package main
 
 import (
 	"fmt"
-	"go-lc/data_structure/binary_system"
+	"go-lc/binary_system"
+	"go-lc/binary_system/base"
 )
 
 func main() {
-	binary_system.XOR()
-	binary_system.ChangeValueByXOR(10, 100)
-	binary_system.RemoveLastOne(10)
-	binary_system.GetLastOne(10)
+	base.XOR()
+	base.ChangeValueByXOR(10, 100)
+	base.RemoveLastOne(10)
+	base.GetLastOne(10)
 	topic()
 }
 

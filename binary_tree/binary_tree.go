@@ -1,12 +1,11 @@
-package main
+package binary_tree
 
 import (
 	"fmt"
-	"go-lc/data_structure/binary_tree"
+	"go-lc/binary_tree"
 )
 
-
-func main() {
+func Tree() {
 	tree := generateTree()
 	binary_tree.PreorderTraversal(tree)
 	fmt.Println()
@@ -25,10 +24,10 @@ func main() {
 
 func generateTree() *binary_tree.TreeNode {
 	return &binary_tree.TreeNode{
-		Val:   2,
-		Left:  &binary_tree.TreeNode{
-			Val:   3,
-			Left:  nil,
+		Val: 2,
+		Left: &binary_tree.TreeNode{
+			Val:  3,
+			Left: nil,
 			Right: &binary_tree.TreeNode{
 				Val:   4,
 				Left:  nil,
@@ -36,10 +35,10 @@ func generateTree() *binary_tree.TreeNode {
 			},
 		},
 		Right: &binary_tree.TreeNode{
-			Val:   5,
-			Left:  &binary_tree.TreeNode{
-				Val:   6,
-				Left:  &binary_tree.TreeNode{
+			Val: 5,
+			Left: &binary_tree.TreeNode{
+				Val: 6,
+				Left: &binary_tree.TreeNode{
 					Val:   8,
 					Left:  nil,
 					Right: nil,
